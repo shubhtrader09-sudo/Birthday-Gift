@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Happy Birthday Kirti ❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3, #a18cd1);
+      color: white;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      position: relative;
+    }
+
+    .card {
+      width: min(600px, 95%);
+      padding: 40px 25px;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.16);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+      position: relative;
+      z-index: 5;
+    }
+
+    .cake {
+      font-size: 75px;
+      animation: bounce 1.5s infinite;
+    }
+
+    h1 {
+      font-size: clamp(35px, 8vw, 65px);
+      margin: 15px 0;
+      text-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    }
+
+    .name {
+      color: #fff5a5;
+      text-shadow: 0 0 20px #fff;
+    }
+
+    .date {
+      font-size: 18px;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    .typing {
+      min-height: 65px;
+      font-size: 19px;
+      line-height: 1.6;
+      margin: 20px auto;
+    }
+
+    button {
+      border: none;
+      padding: 15px 28px;
+      border-radius: 50px;
+      background: white;
+      color: #ff4f81;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    }
+
+    #surprise {
+      display: none;
+      margin-top: 30px;
+      animation: fadeIn 1s ease;
+    }
+
+    #surprise h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .message {
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -30px;
+      font-size: 25px;
+      animation: floatUp linear forwards;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .balloon {
+      position: fixed;
+      bottom: -100px;
+      font-size: 55px;
+      animation: balloonUp 8s linear forwards;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      top: -20px;
+      animation: confettiFall linear forwards;
+      z-index: 10;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      opacity: 0.75;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes balloonUp {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-120vh);
+        opacity: 0;
+      }
+    }
+
+    @keyframes confettiFall {
+      from {
+        transform: translateY(0) rotate(0deg);
+      }
+      to {
+        transform: translateY(110vh) rotate(720deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+
+      <div class="cake">🎂</div>
+
+      <div class="date">✨ 5 October ✨</div>
+
+      <h1>
+        Happy Birthday<br>
+        <span class="name">Kirti Sharma</span> ❤️
+      </h1>
+
+      <div class="typing" id="typing"></div>
+
+      <button onclick="showSurprise()">
+        🎁 Open Your Surprise 🎁
+      </button>
+
+      <div id="surprise">
+
+        <h2>Oye Kirti! 😂❤️</h2>
+
+        <p class="message">
+          Aaj ka din officially special hai...<br>
+          Kyunki aaj ek aisi ladki ka birthday hai<br>
+          jo thodi si cute 😇,<br>
+          thodi si pagal 🤪,<br>
+          aur honestly... kaafi zyada special hai ❤️
+          <br><br>
+
+          Tumhari smile hamesha aisi hi rahe,<br>
+          tumhari life mein khushiyan unlimited rahein,<br>
+          aur haan... mujhe bhoolne ki koshish mat karna 😜
+          <br><br>
+
+          <strong>
+            Happy Birthday once again, Kirti! 🎂💖
+          </strong>
+          <br><br>
+
+          Stay cute, stay crazy,<br>
+          and keep smiling always! 🥰
+        </p>
+
+      </div>
+
+      <footer>
+        Made with ❤️ specially for Kirti Sharma
+      </footer>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    // Typing animation
+    const text =
+      "Aaj ka din sirf birthday nahi... ek special reason hai tumhe smile karwane ka ❤️";
+
+    let index = 0;
+
+    function typeText() {
+      if (index < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeText, 45);
+      }
+    }
+
+    typeText();
+
+
+    // Surprise button
+    function showSurprise() {
+
+      document.getElementById("surprise").style.display = "block";
+
+      createConfetti();
+
+      // Extra hearts
+      for (let i = 0; i < 20; i++) {
+        setTimeout(createHeart, i * 100);
+      }
+
+      // Balloons
+      for (let i = 0; i < 10; i++) {
+        setTimeout(createBalloon, i * 250);
+      }
+    }
+
+
+    // Hearts
+    function createHeart() {
+
+      const heart = document.createElement("div");
+
+      heart.className = "heart";
+
+      const hearts = ["❤️", "💖", "💕", "💗", "💘"];
+
+      heart.innerHTML =
+        hearts[Math.floor(Math.random() * hearts.length)];
+
+      heart.style.left =
+        Math.random() * 100 + "vw";
+
+      heart.style.animationDuration =
+        (4 + Math.random() * 4) + "s";
+
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 8000);
+    }
+
+
+    // Balloons
+    function createBalloon() {
+
+      const balloon = document.createElement("div");
+
+      balloon.className = "balloon";
+
+      const balloons = ["🎈", "🎈", "🎈", "🎉"];
+
+      balloon.innerHTML =
+        balloons[Math.floor(Math.random() * balloons.length)];
+
+      balloon.style.left =
+        Math.random() * 95 + "vw";
+
+      balloon.style.animationDuration =
+        (6 + Math.random() * 4) + "s";
+
+      document.body.appendChild(balloon);
+
+      setTimeout(() => {
+        balloon.remove();
+      }, 10000);
+    }
+
+
+    // Confetti
+    function createConfetti() {
+
+      const colors = [
+        "#ff0000",
+        "#ffff00",
+        "#00ff99",
+        "#00ccff",
+        "#ff00ff",
+        "#ffffff"
+      ];
+
+      for (let i = 0; i < 120; i++) {
+
+        const confetti =
+          document.createElement("div");
+
+        confetti.className = "confetti";
+
+        confetti.style.left =
+          Math.random() * 100 + "vw";
+
+        confetti.style.background =
+          colors[Math.floor(Math.random() * colors.length)];
+
+        confetti.style.animationDuration =
+          (2 + Math.random() * 4) + "s";
+
+        confetti.style.animationDelay =
+          Math.random() * 2 + "s";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+          confetti.remove();
+        }, 7000);
+      }
+    }
+
+
+    // Continuous floating hearts
+    setInterval(createHeart, 1200);
+
+  </script>
+
+</body>
+</html>
